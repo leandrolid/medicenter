@@ -1,28 +1,63 @@
 <html>
+
 <head>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=0" />
 	<title>FlexBox</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/template.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-	<header>
+	<header class="header">
 		<div class="container">
-			<div class="logo"><a href="index.html"><img src="./assets/images/logo.png"/></a></div>
-			<div class="menu">
-				<nav>
-					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="">BLOG</a></li>
-						<li><a href="">DEPARTAMENTOS</a></li>
-						<li><a href="">AGENDAMENTOS</a></li>
-						<li><a href="">CONTATO</a></li>
-					</ul>
-				</nav>
+			<div class="logo">
+				<a href="index.html">
+					<img src="./assets/images/logo.png" />
+				</a>
 			</div>
+
+			<nav class="menu">
+				<ul>
+					<a href="">
+						<li>HOME</li>
+					</a>
+					<a href="">
+						<li>BLOG</li>
+					</a>
+					<a href="">
+						<li>DEPARTAMENTOS</li>
+					</a>
+					<a href="">
+						<li>AGENDAMENTOS</li>
+					</a>
+					<a href="">
+						<li>CONTATO</li>
+					</a>
+				</ul>
+			</nav>
 		</div>
 	</header>
+	<div class="mobile-nav">
+		<a href="javascript:void(0);" 
+		class="icon" 
+		onclick="myFunction()">
+			<i 
+			src="./assets/images/menu.png" 
+			class="fa fa-bars"
+			
+			
+			></i></a>
+		<div id="myLinks">
+			<a href="">HOME</a>
+			<a href="">BLOG</a>
+			<a href="">DEPARTAMENTOS</a>
+			<a href="">AGENDAMENTOS</a>
+			<a href="">CONTATO</a>
+		</div>
+		
+	</div>
 	<section id="banner">
 		<div class="container column">
 			<div class="banner-headline">
@@ -32,20 +67,31 @@
 			<div class="banner-options">
 				<div class="banner1">
 					<div class="options-title">Emergency Case</div>
-					<div class="options-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut mauris augue.</div>
+					<div class="options-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+						mauris augue.</div>
 					<a href="">Read more →</a>
 				</div>
 				<div class="banner2">
 					<div class="options-title">Doctors Timetable</div>
-					<div class="options-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut mauris augue.</div>
+					<div class="options-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+						mauris augue.</div>
 					<a href="">Read more →</a>
 				</div>
 				<div class="banner3">
 					<div class="options-title">Opening Hours</div>
 					<div class="options-text">
-						<div class="options-time"><div>Monday - Friday</div><div>8:00 - 17:00</div></div>
-						<div class="options-time"><div>Saturday</div><div>9:00 - 17:00</div></div>
-						<div class="options-time"><div>Sunday</div><div>9:00 - 15:00</div></div>
+						<div class="options-time">
+							<div>Monday - Friday</div>
+							<div>8:00 - 17:00</div>
+						</div>
+						<div class="options-time">
+							<div>Saturday</div>
+							<div>9:00 - 17:00</div>
+						</div>
+						<div class="options-time">
+							<div>Sunday</div>
+							<div>9:00 - 15:00</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -53,7 +99,8 @@
 	</section>
 	<section id="content">
 		<div class="container">
-			<section><div class="widget">
+			<section>
+				<div class="widget">
 					<div class="widget-title">Latest News</div>
 					<div class="widget-bar"></div>
 					<div class="widget-content">
@@ -62,44 +109,61 @@
 								<div class="widget-date">12 DEC 12</div>
 								<div class="widget-comments"><a href="">2</a></div>
 							</div>
-							<a href="#"><img src="./assets/images/dr.jpg"/></a>
+							<a href="#"><img src="./assets/images/dr.jpg" /></a>
 							<div class="widget-news-title"><a href="">Lorem ipsum dolor sit amat velum</a></div>
-							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.</div>
-							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a href="">General</a></div>
+							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+								volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra
+								interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing
+								mauris.</div>
+							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a
+									href="">General</a></div>
 						</div>
 						<div class="widget-news">
 							<div class="widget-info">
 								<div class="widget-date">12 DEC 12</div>
 								<div class="widget-comments"><a href="">2</a></div>
 							</div>
-							<a href="#"><img src="./assets/images/dr.jpg"/></a>
+							<a href="#"><img src="./assets/images/dr.jpg" /></a>
 							<div class="widget-news-title"><a href="">Lorem ipsum dolor sit amat velum</a></div>
-							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.</div>
-							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a href="">General</a></div>
+							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+								volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra
+								interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing
+								mauris.</div>
+							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a
+									href="">General</a></div>
 						</div>
 						<div class="widget-news">
 							<div class="widget-info">
 								<div class="widget-date">12 DEC 12</div>
 								<div class="widget-comments"><a href="">2</a></div>
 							</div>
-							<a href="#"><img src="./assets/images/dr.jpg"/></a>
+							<a href="#"><img src="./assets/images/dr.jpg" /></a>
 							<div class="widget-news-title"><a href="">Lorem ipsum dolor sit amat velum</a></div>
-							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.</div>
-							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a href="">General</a></div>
+							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+								volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra
+								interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing
+								mauris.</div>
+							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a
+									href="">General</a></div>
 						</div>
 						<div class="widget-news">
 							<div class="widget-info">
 								<div class="widget-date">12 DEC 12</div>
 								<div class="widget-comments"><a href="">2</a></div>
 							</div>
-							<a href="#"><img src="./assets/images/dr.jpg"/></a>
+							<a href="#"><img src="./assets/images/dr.jpg" /></a>
 							<div class="widget-news-title"><a href="">Lorem ipsum dolor sit amat velum</a></div>
-							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.</div>
-							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a href="">General</a></div>
+							<div class="widget-news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+								volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra
+								interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing
+								mauris.</div>
+							<div class="widget-news-source">Posted in <a href="">Dental Clinic</a>, <a
+									href="">General</a></div>
 						</div>
-						<div class="news-all"><a href="">Show all →</a></div>
 					</div>
-				</div></section>
+					<div class="news-all"><a href="">Show all →</a></div>
+				</div>
+			</section>
 			<aside>
 				<div class="widget">
 					<div class="widget-title">Departments</div>
@@ -115,17 +179,17 @@
 		</div>
 	</section>
 	<footer>
-		<div class="container">
+		<div class="container footer-options">
 			<div class="banner-options">
-				<div class="banner1">
+				<div class="banner1 banner-footer">
 					<div class="options-title">Health Insurance</div>
 					<div class="options-text"><a href="">Here in medicenter we have individual </a>→</div>
 				</div>
-				<div class="banner2">
+				<div class="banner2 banner-footer">
 					<div class="options-title">Medical Records</div>
 					<div class="options-text"><a href="">Here in medicenter we have individual </a>→</div>
 				</div>
-				<div class="banner3">
+				<div class="banner3 banner-footer">
 					<div class="options-title">Online Bill Pay</div>
 					<div class="options-text"><a href="">Here in medicenter we have individual </a>→</div>
 				</div>
@@ -135,11 +199,15 @@
 					<div class="widget-title">Medicenter Clinic</div>
 					<div class="widget-bar"></div>
 					<div class="widget-content">
-						<div class="content1">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada individual.</div>
+						<div class="content1">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi
+							malesuada individual.</div>
 						<div class="content2">Medicenter Clinic</div>
-						<div class="content3">33 Farlane Street</div><div class="content4">+123 655 655</div>
-						<div class="content3">Keilor East</div> <div class="content4">+123 755 755</div>
-						<div class="content3">VIC 3033, Australia</div> <div class="content4">medicenter@mail.com</div>
+						<div class="content3">33 Farlane Street</div>
+						<div class="content4">+123 655 655</div>
+						<div class="content3">Keilor East</div>
+						<div class="content4">+123 755 755</div>
+						<div class="content3">VIC 3033, Australia</div>
+						<div class="content4">medicenter@mail.com</div>
 					</div>
 				</div>
 				<div class="widget">
@@ -148,7 +216,8 @@
 					<div class="widget-content">
 						<ul>
 							<li>
-								<a href="">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.</a>
+								<a href="">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi
+									malesuada.</a>
 								<div class="footer-date">8 years ago</div>
 							</li>
 							<li>
@@ -156,7 +225,8 @@
 								<div class="footer-date">8 years ago</div>
 							</li>
 							<li>
-								<a href="">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.</a>
+								<a href="">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi
+									malesuada.</a>
 								<div class="footer-date">8 years ago</div>
 							</li>
 						</ul>
@@ -173,12 +243,15 @@
 								<div class="footer-date">8 years ago</div>
 							</li>
 							<li>
-								<div>Please support us on #ProductHunt and upvote or comment our Chauffeur Booking System for WordPress:...
-								<a href="">t.co/6uKFwyXOOL</a></div>
+								<div>Please support us on #ProductHunt and upvote or comment our Chauffeur Booking
+									System for WordPress:...
+									<a href="">t.co/6uKFwyXOOL</a>
+								</div>
 								<div class="footer-date">8 years ago</div>
 							</li>
 							<li>
-								<div>We've released new version (v5.7) of our Renovate #Construction #Renovation #WordPress Theme. Check at #ThemeForest <a href="">t.co/SqpmUycaL2</a></div>
+								<div>We've released new version (v5.7) of our Renovate #Construction #Renovation
+									#WordPress Theme. Check at #ThemeForest <a href="">t.co/SqpmUycaL2</a></div>
 								<div class="footer-date">8 years ago</div>
 							</li>
 						</ul>
@@ -188,6 +261,16 @@
 			<div class="rights">© Copyright - MediCenter Template by QuanticaLabs</div>
 		</div>
 	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
 </body>
 
 </html>
